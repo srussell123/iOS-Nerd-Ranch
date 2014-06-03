@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface BNRItem : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valueInDollars;
-    NSDate *_dateCreated;
-}
+
+@property (nonatomic, strong) BNRItem *containedItem;  //strong pointer is default but usually declared
+@property (nonatomic, weak) BNRItem *container;     //weak to avoid strong reference cycle and consequent memory leak
+@property (nonatomic, copy) NSString *itemName;     //copy used for mutable subclasses
+@property (nonatomic, copy) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;  //readonly == no setter for this property
 
 + (instancetype)randomItem;
 
@@ -23,16 +24,5 @@
                     serialNumber: (NSString *)sNumber;
 
 - (instancetype)initWithItemName: (NSString *)name;
-
-- (void) setItemName:(NSString *)str;
-- (NSString *)itemName;
-
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
-
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
 
 @end
