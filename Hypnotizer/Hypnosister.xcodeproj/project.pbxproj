@@ -80,7 +80,7 @@
 		5E6F2EFA193D90D300D097F2 = {
 			isa = PBXGroup;
 			children = (
-				5E6F2F0C193D90D300D097F2 /* Hypnotizer */,
+				5E6F2F0C193D90D300D097F2 /* Hypnosister */,
 				5E6F2F25193D90D300D097F2 /* HypnotizerTests */,
 				5E6F2F05193D90D300D097F2 /* Frameworks */,
 				5E6F2F04193D90D300D097F2 /* Products */,
@@ -107,7 +107,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E6F2F0C193D90D300D097F2 /* Hypnotizer */ = {
+		5E6F2F0C193D90D300D097F2 /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
 				5E6F2F35193D91DA00D097F2 /* BNRHypnosisView.h */,
@@ -117,6 +117,7 @@
 				5E6F2F18193D90D300D097F2 /* Images.xcassets */,
 				5E6F2F0D193D90D300D097F2 /* Supporting Files */,
 			);
+			name = Hypnosister;
 			path = Hypnotizer;
 			sourceTree = "<group>";
 		};

@@ -52,6 +52,18 @@
     path.lineWidth = 10;  //make line wider
     [self.circleColor setStroke];
     [path stroke];  //draws line
+    
+//SAVE Image from current background context: 6/3 Not working currently
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    NSData *pngImage = UIImagePNGRepresentation(image);
+//    NSString *docsDir;
+//    NSArray *dirPaths;
+//    
+//    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    docsDir = [dirPaths objectAtIndex:0];
+//    NSString *databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent:@"foo.png"]];
+//    [pngImage writeToFile:databasePath atomically:YES];
+
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
