@@ -27,6 +27,10 @@
 		5E6F2F831940067800D097F2 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F7F1940067800D097F2 /* Hypno@2x.png */; };
 		5E6F2F841940067800D097F2 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F801940067800D097F2 /* Time.png */; };
 		5E6F2F851940067800D097F2 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F811940067800D097F2 /* Time@2x.png */; };
+		5E6F2F8A1940960800D097F2 /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F2F891940960800D097F2 /* BNRQuizViewController.m */; };
+		5E6F2F8C1940969300D097F2 /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F8B1940969300D097F2 /* BNRQuizViewController.xib */; };
+		5E6F2F9219409B8800D097F2 /* Quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F9119409B8800D097F2 /* Quiz.png */; };
+		5E6F2F9419409CAD00D097F2 /* Quiz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F2F9319409CAD00D097F2 /* Quiz@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,11 @@
 		5E6F2F7F1940067800D097F2 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		5E6F2F801940067800D097F2 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		5E6F2F811940067800D097F2 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		5E6F2F881940960800D097F2 /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		5E6F2F891940960800D097F2 /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		5E6F2F8B1940969300D097F2 /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
+		5E6F2F9119409B8800D097F2 /* Quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Quiz.png; sourceTree = "<group>"; };
+		5E6F2F9319409CAD00D097F2 /* Quiz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,8 @@
 			children = (
 				5E6F2F7E1940067800D097F2 /* Hypno.png */,
 				5E6F2F7F1940067800D097F2 /* Hypno@2x.png */,
+				5E6F2F9119409B8800D097F2 /* Quiz.png */,
+				5E6F2F9319409CAD00D097F2 /* Quiz@2x.png */,
 				5E6F2F801940067800D097F2 /* Time.png */,
 				5E6F2F811940067800D097F2 /* Time@2x.png */,
 				5E6F2F53193FCAC700D097F2 /* BNRAppDelegate.h */,
@@ -139,6 +150,9 @@
 				5E6F2F79193FCDA200D097F2 /* BNRReminderViewController.h */,
 				5E6F2F7A193FCDA200D097F2 /* BNRReminderViewController.m */,
 				5E6F2F7C193FCEFE00D097F2 /* BNRReminderViewController.xib */,
+				5E6F2F881940960800D097F2 /* BNRQuizViewController.h */,
+				5E6F2F891940960800D097F2 /* BNRQuizViewController.m */,
+				5E6F2F8B1940969300D097F2 /* BNRQuizViewController.xib */,
 				5E6F2F56193FCAC700D097F2 /* Images.xcassets */,
 				5E6F2F4B193FCAC700D097F2 /* Supporting Files */,
 			);
@@ -253,10 +267,13 @@
 				5E6F2F851940067800D097F2 /* Time@2x.png in Resources */,
 				5E6F2F841940067800D097F2 /* Time.png in Resources */,
 				5E6F2F7D193FCEFE00D097F2 /* BNRReminderViewController.xib in Resources */,
+				5E6F2F9419409CAD00D097F2 /* Quiz@2x.png in Resources */,
 				5E6F2F4F193FCAC700D097F2 /* InfoPlist.strings in Resources */,
+				5E6F2F8C1940969300D097F2 /* BNRQuizViewController.xib in Resources */,
 				5E6F2F821940067800D097F2 /* Hypno.png in Resources */,
 				5E6F2F831940067800D097F2 /* Hypno@2x.png in Resources */,
 				5E6F2F57193FCAC700D097F2 /* Images.xcassets in Resources */,
+				5E6F2F9219409B8800D097F2 /* Quiz.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +294,7 @@
 			files = (
 				5E6F2F78193FCBB600D097F2 /* BNRHypnosisViewController.m in Sources */,
 				5E6F2F51193FCAC700D097F2 /* main.m in Sources */,
+				5E6F2F8A1940960800D097F2 /* BNRQuizViewController.m in Sources */,
 				5E6F2F55193FCAC700D097F2 /* BNRAppDelegate.m in Sources */,
 				5E6F2F7B193FCDA200D097F2 /* BNRReminderViewController.m in Sources */,
 				5E6F2F75193FCB5600D097F2 /* BNRHypnosisView.m in Sources */,
