@@ -56,10 +56,15 @@
     // Did the superclass's designated initializer succeed?
     if (self) {
         // Give the instance variables initial values
-        self.itemName = name;
-        self.serialNumber = sNumber;
-        self.valueInDollars = value;
-        self.dateCreated = [[NSDate alloc] init];
+        _itemName = name;
+        _serialNumber = sNumber;
+        _valueInDollars = value;
+        _dateCreated = [[NSDate alloc] init];
+        
+        //Create an NSUUID object - and get its string
+        NSUUID *uuid = [[NSUUID alloc] init];
+        NSString *key = [uuid UUIDString];
+        _itemKey = key;
     }
     
     // Return the address of the newly initialized object
